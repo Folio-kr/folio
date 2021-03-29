@@ -1,22 +1,24 @@
 # folio
+## Introduction
+Folio service manage your portfolio for your life.
 
 ## Service
 
 ### Platform
 |      |Name|Version|Status|
 |------|---|---|---|
-|      |Web||Front-end|
-|      |iOS|   |Back-end|
-|      |Android|   |Back-end|
-|      |Windows|   |Back-end|
-|      |macOS|   |Back-end|
-|      |Linux|   |Back-end|
+|      |Web|[0.0.0](http://folio-kr.web.app/)|Not-Yet|
+|      |iOS|   |Not-Yet|
+|      |Android|   |Not-Yet|
+|      |Windows|   |Not-Yet|
+|      |macOS|   |Not-Yet|
+|      |Linux|   |Not-Yet|
 
 
 ## UI
 
 ## Development
----
+
 ### SDK
 |      |Name|Version|Description|
 |------|---|---|---|
