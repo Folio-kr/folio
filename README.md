@@ -39,7 +39,7 @@ Folio service manage your portfolio for your life.
 * HR 솔루션
   * 게시판 출시
 * LMS 크롤링
-* 대회 활동
+* 대외 활동
   * (광고) 광고 수익
 ---
 * 대외 활동
