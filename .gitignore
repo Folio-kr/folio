@@ -36,5 +36,6 @@ fire*
 functions*
 !functions/index.js
 
+.idea*
 
 !*.gitignore
