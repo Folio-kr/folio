@@ -21,6 +21,12 @@ class MainPage extends StatelessWidget {
                   },
                   child: Text('Go to subpage!'),
                 ),
+                ElevatedButton(
+                  onPressed: () {
+                    Get.toNamed('/react');
+                  },
+                  child: Text('Go to reactive page!'),
+                ),
                 GetBuilder<TestViewmodel>(builder: (_) {
                   return ElevatedButton(
                     onPressed: () {
