@@ -28,7 +28,8 @@ class SubPage extends StatelessWidget {
             ),
             Expanded(
               child: ScreenTypeLayout(
-                // breakpoints: ScreenBreakpoints(tablet: 600, desktop: 950, watch: 300),
+                breakpoints:
+                    ScreenBreakpoints(tablet: 768, desktop: 1024, watch: 300),
                 mobile: Container(
                   color: Colors.blue,
                   child: Center(child: Text('mobile')),
