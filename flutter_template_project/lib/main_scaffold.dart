@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_template_project/viewmodels/app_viewmodel.dart';
 import 'package:flutter_template_project/viewmodels/test_viewmodel.dart';
 import 'package:flutter_template_project/viewmodels/user_viewmodel.dart';
 import 'package:get/get.dart';
@@ -17,6 +18,7 @@ class MainScaffold extends StatelessWidget {
     ];
 
     return GetMaterialApp(
+      title: 'Flutter template',
       home: MainPage(),
       theme: null,
       getPages: _getPages,
@@ -30,5 +32,6 @@ class AppBinding implements Bindings {
   void dependencies() {
     Get.lazyPut(() => TestViewmodel());
     Get.lazyPut(() => UserViewmodel());
+    Get.lazyPut(() => AppModelViewmodel());
   }
 }
