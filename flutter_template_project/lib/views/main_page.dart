@@ -17,7 +17,7 @@ class MainPage extends StatelessWidget {
           return Center(
             child: Column(
               children: [
-                Text('Hello template'),
+                SelectableText('Hello template'),
                 ElevatedButton(
                   onPressed: () {
                     Get.toNamed('/sub');

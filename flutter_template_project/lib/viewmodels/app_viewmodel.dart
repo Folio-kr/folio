@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+
 import 'package:flutter_template_project/core_packages.dart';
 import 'package:flutter_template_project/models/app_model.dart';
 
@@ -12,7 +13,7 @@ class AppModelViewmodel extends GetxController {
     SystemChrome.setApplicationSwitcherDescription(
         ApplicationSwitcherDescription(
       label: appModel.title,
-      primaryColor: 0x0,
+      primaryColor: Colors.transparent.value,
     ));
     update();
   }
