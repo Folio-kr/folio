@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:folio_flutter/datas/dummy_project.dart';
 import 'package:responsive_builder/responsive_builder.dart';
+
+import 'package:folio_flutter/views/project_page/project_tile.dart';
 
 import 'package:folio_flutter/views/widgets/app_bar.dart';
 
@@ -25,7 +28,7 @@ class _ProjectBody extends StatelessWidget {
         return Row(
           children: [
             // _ProjectDrawer(),
-            _ProjectListView(),
+            Flexible(child: _ProjectListView()),
           ],
         );
       },
@@ -33,7 +36,7 @@ class _ProjectBody extends StatelessWidget {
         return Row(
           children: [
             _ProjectDrawer(),
-            _ProjectListView(),
+            Flexible(child: _ProjectListView()),
           ],
         );
       },
@@ -79,14 +82,21 @@ class _ProjectListView extends StatelessWidget {
 class _InprogressProjectListView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    var projects = DummyInprogressProject;
+    // return Container(
+    //   child: Column(
+    //     mainAxisAlignment: MainAxisAlignment.center,
+    //     children: <Widget>[
+    //       for (var project in projects)
+    //         SizedBox(child: Card(child: ListTile(title: Text(project.title))))
+    //     ],
+    //   ),
+    // );
+
     return Container(
       child: Column(
-        children: [
-          Text('Folio 사업화 프로젝트'),
-          Text('Folio 사업화 프로젝트'),
-          Text('Folio 사업화 프로젝트'),
-          Text('Folio 사업화 프로젝트'),
-        ],
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: <Widget>[for (var project in projects) ProjectTile(project)],
       ),
     );
   }
@@ -95,14 +105,21 @@ class _InprogressProjectListView extends StatelessWidget {
 class _DoneProjectListView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    var projects = DummyDoneProject;
+    // return Container(
+    //   child: Column(
+    //     mainAxisAlignment: MainAxisAlignment.center,
+    //     children: <Widget>[
+    //       for (var project in projects)
+    //         SizedBox(child: Card(child: ListTile(title: Text(project.title))))
+    //     ],
+    //   ),
+    // );
+
     return Container(
       child: Column(
-        children: [
-          Text('Project 1'),
-          Text('Project 1'),
-          Text('Project 1'),
-          Text('Project 1'),
-        ],
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: <Widget>[for (var project in projects) ProjectTile(project)],
       ),
     );
   }
