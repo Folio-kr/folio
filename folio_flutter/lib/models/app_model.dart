@@ -1,8 +1,11 @@
-class AppModel {
-  String title;
-  // Firebase
+class App {
+  //Screen
+  late String title;
+  _ScreenBreakPoints screenBreakpoints = _ScreenBreakPoints();
+}
 
-  // User
-
-  // reset
+class _ScreenBreakPoints {
+  double desktop = 1024; // 1920
+  double tablet = 768;
+  double watch = 200;
 }
