@@ -10,6 +10,9 @@ import 'package:folio_flutter/views/project_page/project_page.dart';
 import 'package:folio_flutter/controllers/app_controller.dart';
 import 'package:folio_flutter/controllers/user_controller.dart';
 
+// dev views
+import 'package:folio_flutter/views/debug_page/debug_page.dart';
+
 class MainScaffold extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -17,6 +20,8 @@ class MainScaffold extends StatelessWidget {
       GetPage(name: '/', page: () => MainPage()),
       GetPage(name: '/main', page: () => MainPage()),
       GetPage(name: '/project', page: () => ProjectPage()),
+      GetPage(name: '/debug', page: () => DebugPage()),
+
     ];
 
     return GetMaterialApp(
