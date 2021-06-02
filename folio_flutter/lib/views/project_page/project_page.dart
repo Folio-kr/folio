@@ -23,7 +23,14 @@ class _ProjectBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ScreenTypeLayout.builder(
-      mobile: (BuildContext context) => Container(color: Colors.blue),
+      mobile: (BuildContext context) {
+        return Row(
+          children: [
+            // _ProjectDrawer(),
+            Flexible(child: _ProjectListView()),
+          ],
+        );
+      },
       tablet: (BuildContext context) {
         return Row(
           children: [
