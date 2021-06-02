@@ -22,7 +22,7 @@ class MainScaffold extends StatelessWidget {
     return GetMaterialApp(
       title: 'Folio',
       home: MainPage(),
-      theme: null,
+      theme: FolioDarkTheme,
       getPages: _getPages,
       initialBinding: AppBinding(),
     );
