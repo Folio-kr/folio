@@ -5,7 +5,7 @@ class MainPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: _MainBody(),
+      body: SafeArea(child: _MainBody()),
     );
   }
 }
@@ -13,17 +13,19 @@ class MainPage extends StatelessWidget {
 class _MainBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView(
-        child: Column(
-      children: [
-        Text('Main Page'),
-        ElevatedButton(
-          onPressed: () {
-            Get.toNamed('/project');
-          },
-          child: Text('Go to Project Page'),
-        ),
-      ],
-    ));
+    return Center(
+      child: SingleChildScrollView(
+          child: Column(
+        children: [
+          Text('Main Page'),
+          ElevatedButton(
+            onPressed: () {
+              Get.toNamed('/project');
+            },
+            child: Text('Go to Project Page'),
+          ),
+        ],
+      )),
+    );
   }
 }
